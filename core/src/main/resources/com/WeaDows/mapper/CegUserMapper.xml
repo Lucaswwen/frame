@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.WeaDows.mapper.CegUserMapper">
+  <resultMap id="BaseResultMap" type="com.WeaDows.entity.CegUser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="role" jdbcType="INTEGER" property="role" />
+    <result column="client_id" jdbcType="VARCHAR" property="clientId" />
+    <result column="client_secret" jdbcType="VARCHAR" property="clientSecret" />
+    <result column="referee" jdbcType="VARCHAR" property="referee" />
+    <result column="photourl" jdbcType="VARCHAR" property="photourl" />
+    <result column="qrurl" jdbcType="VARCHAR" property="qrurl" />
+    <result column="is_enable" jdbcType="CHAR" property="isEnable" />
+    <result column="bz" jdbcType="VARCHAR" property="bz" />
+    <result column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="paypwd" jdbcType="VARCHAR" property="paypwd" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, code, username, nickname, mobile, birthday, email, password, create_time, role, 
+    client_id, client_secret, referee, photourl, qrurl, is_enable, bz, openid, paypwd
+  </sql>
+</mapper>
